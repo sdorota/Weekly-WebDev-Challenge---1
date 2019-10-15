@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weekly Web Challenge #1</title>
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Titillium+Web"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <header class="header-container">
+      <img
+        class="header-logo"
+        src="img/Masteralb.com TOP LOGO.png"
+        alt="Masteralb logo"
+      />
+    </header>
+
+    <div class="wrapper">
+      <!-- REGISTER FORM -->
+      <section class="box register">
+        <h2 class="form-name">Register Form</h2>
+        <div class="form-outer">
+          <form
+            action="https://formspree.io/dorota.sarba@gmail.com"
+            method="post"
+          >
+            <div class="form-inner">
+              <div class="input-container">
+                <img class="icon" src="img/glyphicons_003_user.png" alt="User icon">
+                <span class="bar"></span>
+                <input
+                  class="input-field"
+                  type="text"
+                  placeholder="Username"
+                  name="usrnm"
+                  required
+                />
+              </div>
+              <div class="input-container">
+                  <img class="icon" src="img/glyphicons_203_lock.png" alt="Padlock icon"> <span class="bar"></span>
+                <input
+                  class="input-field"
+                  type="text"
+                  placeholder="Password"
+                  name="password"
+                  required
+                />
+              </div>
+              <div class="input-container">
+                  <img class="icon" src="img/glyphicons_203_lock.png" alt="Padlock icon"> <span class="bar"></span>
+                <input
+                  class="input-field"
+                  type="text"
+                  placeholder="Confirm Pasword"
+                  name="confirmPassword"
+                  required
+                />
+              </div>
+              <div class="input-container">
+                  <img class="icon" src="img/glyphicons_010_envelope (1).png" alt="Envelope icon"> <span class="bar"></span>
+                <input
+                  class="input-field"
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="input-container">
+                  <img class="icon" src="img/glyphicons_242_google_maps.png" alt="Location icon">
+                <span class="bar"></span>
+                <select
+                  class="input-field"
+                  name="city"
+                  id="city"
+                  placeholder="Your location"
+                  required
+                >
+                  <option value="Your location" disabled selected
+                    >Your Location</option
+                  >
+                  <option value="gdańsk">Gdańsk</option>
+                  <option value="krakow">Kraków</option>
+                  <option value="łódź">Łódź</option>
+                  <option value="poznań">Poznań</option>
+                  <option value="warszawa">Warszawa</option>
+                  <option value="wroclaw">Wrocław</option>
+                </select>
+              </div>
+              <div class="checkbox-container">
+                <input
+                  type="checkbox"
+                  name="agreement"
+                  id="agreement"
+                  required
+                  checked
+                />
+                <label class="agreement" for="agreement"
+                  >I have read and accept the terms of use.</label
+                >
+              </div>
+              <br />
+              <input type="submit" value="Sign up" />
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- SEND EMAIL FORM -->
+      <section class="box send">
+        <h2 class="form-name">Send Email</h2>
+        <div class="form-outer">
+          <form
+            action="https://formspree.io/dorota.sarba@gmail.com"
+            method="post"
+          >
+            <div class="form-inner">
+              <div class="input-container">
+                  <img class="icon" src="img/glyphicons_003_user.png" alt="User icon"> <span class="bar"></span>
+                <input
+                  class="input-field"
+                  type="text"
+                  placeholder="Your Name"
+                  name="usrnm"
+                  required
+                />
+              </div>
+              <div class="input-container">
+                  <img class="icon" src="img/glyphicons_010_envelope (1).png" alt="Envelope icon"> <span class="bar"></span>
+                <input
+                  class="input-field"
+                  type="email"
+                  placeholder="Your Email"
+                  name="email"
+                  required
+                />
+              </div>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Type your message..."
+              ></textarea>
+              <div class="checkbox-container">
+                <input type="checkbox" name="copy" id="copy" required checked />
+                <label class="copy" for="copy">Send a copy to my email</label>
+              </div>
+              <br />
+              <input type="submit" value="Send Email" />
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- SIGN IN FORM -->
+      <section class="box sign">
+        <h2 class="form-name">Sign In Form</h2>
+        <div class="form-outer">
+          <form
+            action="https://formspree.io/dorota.sarba@gmail.com"
+            method="post"
+          >
+            <div class="form-inner">
+              <div class="input-container">
+                  <img class="icon" src="img/glyphicons_003_user.png" alt="User icon">
+                   <span class="bar"></span>
+                <input
+                  class="input-field"
+                  type="text"
+                  placeholder="Username"
+                  name="usrnm"
+                  required
+                />
+              </div>
+              <div class="input-container">
+                  <img class="icon" src="img/glyphicons_203_lock.png" alt="Padlock icon"> <span class="bar"></span>
+                <input
+                  class="input-field"
+                  type="text"
+                  placeholder="Password"
+                  name="password"
+                  required
+                />
+              </div>
+              <div class="agreement-button">
+                <div class="checkbox-container checkbox-container-small">
+                  <input
+                    type="checkbox"
+                    name="remember"
+                    id="remember"
+                    checked
+                  />
+                  <label class="remember" for="remember">Remember me.</label>
+                </div>
+                <br />
+                <input type="submit" class="btn-small" value="Sign in" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- RECOVER FORM -->
+      <section class="box recover">
+        <h2 class="form-name">Recover Form</h2>
+        <div class="form-outer">
+          <form
+            action="https://formspree.io/dorota.sarba@gmail.com"
+            method="post"
+          >
+            <div class="form-inner">
+              <div class="input-container">
+                  <img class="icon" src="img/glyphicons_010_envelope (1).png" alt="Envelope icon"> <span class="bar"></span>
+                <input
+                  class="input-field"
+                  type="email"
+                  placeholder="Enter your Email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="input-container">
+                  <img class="icon" src="img/glyphicons_139_phone.png" alt="Phone icon">
+                <span class="bar"></span>
+                <input
+                  class="input-field"
+                  type="tel"
+                  placeholder="Enter your Phone number"
+                  name="phone"
+                  required
+                />
+              </div>
+              <div class="buttons">
+                <input type="submit" class="btn-medium" value="Send" />
+                <input type="submit" class="btn-medium done" value="Done" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- SUBSCRIBE FORM -->
+      <section class="box subscribe">
+        <h2 class="form-name">Subscribe Form</h2>
+        <div class="form-outer">
+          <form
+            action="https://formspree.io/dorota.sarba@gmail.com"
+            method="post"
+          >
+            <div class="form-inner">
+              <div class="input-container">
+                  <img class="icon" src="img/glyphicons_010_envelope (1).png" alt="Envelope icon"> <span class="bar"></span>
+                <input
+                  class="input-field"
+                  type="email"
+                  placeholder="Enter your Email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="buttons">
+                <input type="submit" class="btn-medium" value="Subscribe" />
+                <input
+                  type="submit"
+                  class="btn-medium btn-red"
+                  value="No, thanks"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer-container">
+        <figure>
+          <img class="footer-logo" src="img/Masteralb.com LOGO.png" alt="" />
+        </figure>
+      </footer>
+    </div>
+  </body>
+</html>
